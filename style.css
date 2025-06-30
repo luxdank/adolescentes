@@ -1,0 +1,103 @@
+:root {
+    --primary: #ffa500; /* Roxo - realeza em Cristo */
+    --secondary: #fbc02d; /* Dourado - glória divina */
+    --accent: #4CAF50;   /* Verde - crescimento espiritual */
+    --light: #e3f2fd; /* Azul claro - paz */
+    --dark: #1a237e; /* Azul escuro - profundidade em Deus */
+    --text: #333333;
+    --white: #ffffff;
+    --facebook: #3b5998;
+    --whatsapp: #25D366;
+    --instagram: #E1306C;
+    --twitter: #1DA1F2;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Todos os outros estilos CSS... */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card, .goal-card {
+        width: 100%;
+    }
+    
+    .cta-button {
+        display: block;
+        margin: 1rem auto;
+        width: 80%;
+    }
+    
+    .countdown-container {
+        gap: 0.5rem;
+    }
+    
+    .countdown-box {
+        min-width: 70px;
+        padding: 0.8rem;
+    }
+    
+    .countdown-value {
+        font-size: 1.5rem;
+    }
+    
+    .goal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .goal-button {
+        width: 100%;
+    }
+}
+
+.admin-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 2rem;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.admin-panel input,
+.admin-panel textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-panel textarea {
+    min-height: 100px;
+}
+
+.admin-panel button {
+    cursor: pointer;
+}
+
+#devocionals-list {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
